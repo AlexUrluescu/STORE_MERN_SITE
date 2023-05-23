@@ -1,0 +1,167 @@
+
+
+.container_home{
+    background-color: rgb(246, 246, 246);
+
+    display: flex;
+    
+}
+
+.container_welcome{
+    /* background-color: antiquewhite; */
+    width: 50%;
+    /* color: white; */
+    padding: 30px 10px;
+    height: 70vh;
+
+    
+    background: rgba(255, 255, 255, 0.51);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.welcome_h{
+    font-weight: 400;
+}
+
+.welcome_b{
+    font-weight: 600;
+    color: gold;
+}
+
+.container_p{
+    margin-top: 30px;
+}
+
+.login_link{
+    margin-top: 60px;
+    text-decoration: none;
+    color: black;
+    background-color: gold;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    width: 100px;
+    text-align: center;
+}
+
+
+.container_image{
+    /* background-color: aqua; */
+    width: 50%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_image img{
+    width: 400px;
+    height: 400px;
+}
+
+.container_arrow{
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow_icon{
+    /* background-color: red; */
+    padding: 15px;
+    border-radius: 50%;
+    border: 4px solid #254E58;
+    cursor: pointer;
+    color: black;
+}
+
+.container_forms{
+    padding: 20px;
+    background-color: rgb(246, 246, 246);
+    margin-top: 60px;
+}
+
+.div_title{
+    /* background-color: antiquewhite; */
+    text-align: center;
+    font-size: 30px;
+}
+
+.div_forms{
+    /* background-color: aliceblue; */
+    /* margin-top: 30px; */
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+
+.form{
+    background: rgba(255, 255, 255, 0.51);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+
+    width: 280px;
+    padding: 20px;
+
+    transition: all ease .4s;
+}
+
+.form:hover{
+    transform: scale(1.1);
+}
+
+.form_title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid gold;
+    padding: 5px;
+}
+
+.form_content{
+     text-align: center;
+}
+
+.form_link{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.button_link{
+    border: none;
+    background-color: gold;
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 7px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    margin-top: 300px;
+}

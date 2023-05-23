@@ -1,0 +1,96 @@
+
+.create_container1{
+    background: white;
+    /* background-color: red; */
+    /* margin-top: 30px; */
+    /* padding: 50px; */
+}
+
+.cont_all{
+    background: rgba(237, 237, 237, 0.51);
+    /* background-color: red; */
+    color: black;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.create_box{
+    /* background-color: red; */
+    padding: 20px;
+    width: 800px;
+    font-size: 25px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color: black;
+
+    text-align: center;
+}
+
+.create_form{
+    /* background-color: blue; */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+}
+
+.form_cont input{
+    width: 350px;
+    border: 2px solid gainsboro;
+    outline: none;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-bottom: 40px;
+    margin-top:  5px;
+}
+
+
+/* .formSelect{
+    width: 350px;
+    border: 2px solid gainsboro;
+    outline: none;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-bottom: 40px;
+    margin-top:  5px;
+} */
+
+
+.form_cont textarea{
+    width: 250px;
+    border: none;
+    height: 80px;
+    outline: none;
+    border-radius: 10px;
+    padding:  5px 10px;
+}
+
+.btn_create{
+    width: 100px;
+    height: 40px;
+    background-color: gold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    margin-top: 100px;
+}
