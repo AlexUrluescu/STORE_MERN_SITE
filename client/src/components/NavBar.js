@@ -22,10 +22,10 @@ const NavBar = ({setUserLogin}) => {
             </div>
             <div className="links">
                 <Link className="link" to="/"> Home </Link>
-                <Link className="link" to="/forms"> Forms </Link>
+                <Link className="link" to="/store"> Store </Link>
                 
-                {isAdmin ? <Link className="link" to="/create"> Create </Link> : " "}
-                {isAdmin ? <Link className="link" to="/myforms"> My Forms </Link> : " "}
+                {isAdmin ? <Link className="link" to="/create"> Add </Link> : " "}
+                {isAdmin ? <Link className="link" to="/myproducts"> My Products </Link> : " "}
                 {isLoggedIn ? <Link className="logout" to="/login" onClick={handleClick}>Log out</Link>: <Link className="login" to="/login"> Login </Link>}
 
             </div>

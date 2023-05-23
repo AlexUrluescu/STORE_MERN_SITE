@@ -30,7 +30,7 @@ const FormEdit = ({title, description, id}) => {
         <div className='form_content'>{description}</div>
         <div className="btn_cont">
             <button className='btn_delete' onClick ={handleDelete}>Delete</button>
-            <Link className='button_link' to={`/myforms/${id}`}>Edit</Link>
+            <Link className='button_link' to={`/myproducts/${id}`}>Edit</Link>
         </div>
     </div>
   )

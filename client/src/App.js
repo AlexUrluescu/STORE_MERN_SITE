@@ -45,13 +45,13 @@ function App() {
       <Routes>
         <Route path = '/' element = {<HomePage userLogin={userLogin} setUserLogin={setUserLogin} />} />
         <Route path="/register" element = {<Register />} />
-        <Route path = '/forms' element = {<Forms userLogin={userLogin} setUserLogin={setUserLogin}/>} />
+        <Route path = '/store' element = {<Forms userLogin={userLogin} setUserLogin={setUserLogin}/>} />
         <Route path="/forms/:id" element = {<FormSelect setUserLogin={setUserLogin} />}/>
-        <Route path="/myforms/:id" element = {<EditForm setUserLogin={setUserLogin} />}/>
+        <Route path="/myproducts/:id" element = {<EditForm setUserLogin={setUserLogin} />}/>
         <Route path='/login' element = {<Login userLogin = {userLogin} setUserLogin={setUserLogin}/>}/>
         <Route path='/userData' element = {<UserData/>} />
         <Route path='/create' element = {<Create userLogin={userLogin} setUserLogin={setUserLogin}/>} />
-        <Route path='/myforms' element = {<MyForms userLogin={userLogin} setUserLogin={setUserLogin}/>} />
+        <Route path='/myproducts' element = {<MyForms userLogin={userLogin} setUserLogin={setUserLogin}/>} />
         <Route path="/firstForm" element = {<FirstForm userLogin={userLogin} setUserLogin={setUserLogin}/>} />
         <Route path = '*' element = {<NotFoundPage />} />
       </Routes>
