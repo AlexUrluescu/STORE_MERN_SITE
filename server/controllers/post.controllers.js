@@ -1,6 +1,5 @@
 import Post from "../models/Post.js";
 import User from "../models/User.js";
-import Form1 from "../models/Form1.js";
 import { uploadImage, deleteImage } from "../libs/cloudinary.js";
 import fs from "fs-extra"
 import bcrypt from "bcryptjs"
@@ -168,74 +167,3 @@ export const userData = async (req, res) => {
     }
 
 }
-
-
-// --------------------------------------------
-
-export const postForm1 = async (req, res) => {
-    try {
-        const {title, description, label1, label2, label3, label4, label5, label6, user_name} = req.body;
-        
-        if(user_name === 'undefined undefined'){
-            return res.json({status: "error"})
-        }
-     
-        const newForm = new Form1({title, description, label1, label2, label3, label4, label5, label6, user_name})
-    
-        console.log(newForm);
-        await newForm.save()
-        return res.json({status: "ok"});
-
-    } catch (error) {
-        return res.status(500).json({message: error.message})
-        
-    }
-
-}
-
-export const getForms = async (req, res) => {
-    try {    
-        const forms = await Form1.find()
-        res.send(forms)
-        
-    } catch (error) {
-        console.error(error);
-        return res.status(500).json({message: error.message})
-    }
-
-};
-
-export const getFormSelect = async (req, res) => {
-    try {
-        const {id} = req.params;
-
-        const formSelect = await Form1.findById(id);
-
-        res.json(formSelect);
-        
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-
-// export const createPost = async (req, res) => {
-
-//     try {
-//         const {subject, details, price, user_name} = req.body;
-        
-//         if(user_name === 'undefined undefined'){
-//             return res.json({status: "error"})
-//         }
-     
-//         const newPost = new Post({subject, details, price, user_name})
-    
-//         console.log(newPost);
-//         await newPost.save()
-//         return res.json({status: "ok"});
-
-//     } catch (error) {
-//         return res.status(500).json({message: error.message})
-        
-//     }
-// };
