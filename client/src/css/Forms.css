@@ -30,7 +30,7 @@
 }
 
 
-.form{
+.form2{
     /* background: rgba(255, 255, 255, 0.51); */
     /* background-color: red; */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -39,17 +39,15 @@
 
     width: 280px;
     height: 400px;
+    padding: 15px;
 
     display: flex;
     flex-direction: column;
     /* padding: 20px; */
 
-    transition: all ease .4s;
+    /* transition: all ease .4s; */
 }
 
-.form:hover{
-    transform: scale(1.02);
-}
 
 .formEdit{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

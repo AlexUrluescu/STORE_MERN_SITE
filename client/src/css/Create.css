@@ -11,6 +11,7 @@
     /* background-color: red; */
     color: black;
     margin-top: 50px;
+    padding: 20px;
 
     display: flex;
     justify-content: center;
