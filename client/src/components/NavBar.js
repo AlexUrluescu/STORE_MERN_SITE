@@ -25,7 +25,7 @@ const NavBar = ({setUserLogin}) => {
                 <Link className="link" to="/store"> Store </Link>
                 
                 {isAdmin ? <Link className="link" to="/create"> Add </Link> : " "}
-                {isAdmin ? <Link className="link" to="/myproducts"> My Products </Link> : " "}
+                {isAdmin ? <Link className="link" to="/myproducts"> Admin Store </Link> : " "}
                 {isLoggedIn ? <Link className="logout" to="/login" onClick={handleClick}>Log out</Link>: <Link className="login" to="/login"> Login </Link>}
 
             </div>

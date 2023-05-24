@@ -9,7 +9,7 @@ import "../css/FormsEdit.css"
 
 const MyForms = ({userLogin, setUserLogin}) => {
 
-    const [ forms, setForms ] = useState([]);
+    const [ products, setProducts ] = useState([]);
     const [loaderStatus, setLoaderStatus] = useState()
   
   useEffect(() => {
@@ -17,11 +17,11 @@ const MyForms = ({userLogin, setUserLogin}) => {
 
       try {
         setLoaderStatus(true);
-        const res = await fetch("http://localhost:5000/forms");
+        const res = await fetch("http://localhost:5000/posts");
         const data = await res.json();
 
         console.log(data);
-        setForms(data)
+        setProducts(data)
         setLoaderStatus(false);
         
       } catch (error) {
@@ -53,20 +53,21 @@ const MyForms = ({userLogin, setUserLogin}) => {
 
   sendData();
 
-    // fetchForms();
+    fetchForms();
   }, [setUserLogin])
   return (
     <div>
         <NavBar setUserLogin={setUserLogin}/>
         <div className="create_container1">
-            <h2>My Forms</h2>
+            <h2>Admin Store</h2>
         </div>
         <div className='cont_formsEdit'>
-            {forms.map((form, index) => (
+            {products.map((product, index) => (
                 <FormEdit key={index} 
-                title = {form.title}
-                description = {form.description}
-                id = {form._id}/>
+                title = {product.product_name}
+                description = {product.details}
+                price = {product.price}
+                id = {product._id}/>
             ))}
         </div>
         <footer>

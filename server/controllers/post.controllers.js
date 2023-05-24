@@ -55,7 +55,7 @@ export const updatePost = async (req, res) => {
 
 export const deletePost = async (req, res) => {
     try {
-        const postRemoved = await Form1.findByIdAndDelete(req.params.id);
+        const postRemoved = await Post.findByIdAndDelete(req.params.id);
 
         if(!postRemoved) return res.sendStatus(404)
 
