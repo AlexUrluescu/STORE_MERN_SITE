@@ -9,7 +9,6 @@ import "../css/Create.css";
 const initialForm = {
   product_name: '',
   details: '',
-  quantity: '',
   price: ''
 }
 
@@ -102,7 +101,6 @@ const Create = ({userLogin, setUserLogin}) => {
                         <form className="form_cont" onSubmit={handleSubmit}>
                             <input onChange={handleChange} value={post.product_name} type="text" placeholder="Product name" name="product_name" />
                             <input onChange={handleChange} value={post.details} type="text" placeholder="Details" name="details" />
-                            <input onChange={handleChange} value={post.quantity} type="text" placeholder="Quantity" name="quantity" />
                             <input onChange={handleChange} value={post.price} type="text" placeholder="Price" name="price" />
 
                             <button className="btn_create" type="submit"><b>Create</b></button>

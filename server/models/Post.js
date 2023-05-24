@@ -11,11 +11,6 @@ const postSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
-    quantity:{
-        type: String,
-        required: true,
-        trim: true
-    },
     price:{
         type: String,
         required: true,
