@@ -12,7 +12,7 @@ import Loader from '../components/Loader';
 
 function Forms({userLogin, setUserLogin}) {
 
-  const [ forms, setForms ] = useState([]);
+  const [ products, setProducts ] = useState([]);
   const [loaderStatus, setLoaderStatus] = useState()
   
   useEffect(() => {
@@ -20,11 +20,11 @@ function Forms({userLogin, setUserLogin}) {
 
       try {
         setLoaderStatus(true);
-        const res = await fetch("http://localhost:5000/forms");
+        const res = await fetch("http://localhost:5000/posts");
         const data = await res.json();
 
         console.log(data);
-        setForms(data)
+        setProducts(data)
         setLoaderStatus(false);
         
       } catch (error) {
@@ -54,9 +54,9 @@ function Forms({userLogin, setUserLogin}) {
       }
   }
 
-  sendData();
+    sendData();
 
-    // fetchForms();
+    fetchForms();
   }, [setUserLogin])
 
 
@@ -64,15 +64,15 @@ function Forms({userLogin, setUserLogin}) {
     <div>
         <NavBar setUserLogin={setUserLogin}/>
         <div className="container_forms">
-                <div className="div_title"><h2>Forms</h2></div>
+                <div className="div_title"><h2>Store</h2></div>
                 <div className='cont_content'>
                   {loaderStatus ? <Loader /> : <div className="div_forms">
-                    {forms.map((form, index) => (
+                    {products.map((product, index) => (
                         <FormEx key={index} 
-                          title = {form.title}
-                          description = {form.description}
-                          link= {form._id}/>
-                  
+                          title = {product.product_name}
+                          description = {product.details}
+                          price = {product.price}
+                          link= {product._id}/>
                       ))}  
                   </div>}
                   
