@@ -1,12 +1,17 @@
 import mongoose from "mongoose";
 
 const postSchema = new mongoose.Schema({
-    subject:{
+    product_name:{
         type: String,
         required: true,
         trim: true
     },
     details:{
+        type: String,
+        required: true,
+        trim: true
+    },
+    quantity:{
         type: String,
         required: true,
         trim: true

@@ -7,14 +7,10 @@ import { useNavigate } from "react-router-dom";
 import "../css/Create.css";
 
 const initialForm = {
-    title: "",
-    description: "",
-    label1: "",
-    label2: "",
-    label3: "",
-    label4: "",
-    label5: "",
-    label6: ""
+  product_name: '',
+  details: '',
+  quantity: '',
+  price: ''
 }
 
 const Create = ({userLogin, setUserLogin}) => {
@@ -70,7 +66,7 @@ const Create = ({userLogin, setUserLogin}) => {
 
         console.log(post);
 
-        const res = await fetch("http://localhost:5000/form1", {
+        const res = await fetch("http://localhost:5000/posts", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -84,7 +80,7 @@ const Create = ({userLogin, setUserLogin}) => {
         if(data.status === "ok"){
             console.log('Post created succesfully');
             setPost(initialForm)
-            navigate("/forms")
+            navigate("/store")
         }
 
         else if(data.status === "error"){
@@ -104,14 +100,10 @@ const Create = ({userLogin, setUserLogin}) => {
                     </div>
                     <div className="create_form">
                         <form className="form_cont" onSubmit={handleSubmit}>
-                            <input onChange={handleChange} value={post.title} type="text" placeholder="Title" name="title" />
-                            <input onChange={handleChange} value={post.description} type="text" placeholder="Description" name="description" />
-                            <input onChange={handleChange} value={post.label1} type="text" placeholder="Question 1" name="label1" />
-                            <input onChange={handleChange} value={post.label2} type="text" placeholder="Question 2" name="label2" />
-                            <input onChange={handleChange} value={post.label3} type="text" placeholder="Question 3" name="label3" />
-                            <input onChange={handleChange} value={post.label4} type="text" placeholder="Question 4" name="label4" />
-                            <input onChange={handleChange} value={post.label5} type="text" placeholder="Question 5" name="label5" />
-                            <input onChange={handleChange} value={post.label6} type="text" placeholder="Question 6" name="label6" />
+                            <input onChange={handleChange} value={post.product_name} type="text" placeholder="Product name" name="product_name" />
+                            <input onChange={handleChange} value={post.details} type="text" placeholder="Details" name="details" />
+                            <input onChange={handleChange} value={post.quantity} type="text" placeholder="Quantity" name="quantity" />
+                            <input onChange={handleChange} value={post.price} type="text" placeholder="Price" name="price" />
 
                             <button className="btn_create" type="submit"><b>Create</b></button>
                         </form>
