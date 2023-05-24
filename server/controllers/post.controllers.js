@@ -43,7 +43,7 @@ export const createPost = async (req, res) => {
 export const updatePost = async (req, res) => {
 
     try {
-        const updatedPost = await Form1.findByIdAndUpdate(req.params.id, req.body, { new: true })
+        const updatedPost = await Post.findByIdAndUpdate(req.params.id, req.body, { new: true })
         console.log(updatedPost);
         return res.json(updatedPost);
 
