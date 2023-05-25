@@ -3,8 +3,9 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
+import { FaMoneyBillAlt } from "react-icons/fa";
 
-import "../css/Create.css";
+import "../css/ProductSelect.css";
 
 import NavBar from '../components/NavBar';
 
@@ -60,21 +61,31 @@ const FormSelect = ({setUserLogin}) => {
   return (
     <div>
         <NavBar setUserLogin={setUserLogin}/>
-        <div className='cont_all'>
-        <div className='form2'>
-        <div className='form_title'>{product.product_name}</div>
-        <div className='form_content'>{product.details}</div>
-        <div className='form_content'>{product.price}</div>
-        <div className='form_content'>
-          <p>Quantity: {quantity}</p>
-          <button onClick={handlePlus}>+</button>
-          <button onClick={handleMinus}>-</button>
-        </div>
-        <div>
-          <p>Total: {total}</p>
-        </div>
-        <div className='form_link'><button onClick={handleButton} className='button_link'>Buy</button></div>
-    </div>
+        <div className='container_product_select'>
+          <div className='product_select'>
+            <div className='product_select_text'>
+              <div className='title_product_select'><p>{product.product_name}</p></div>
+              <p id = "p1" className='product_details'>{product.details}</p>
+              <div className='container_price'>
+                <p className='product_class'>{product.price}</p>
+                <span><FaMoneyBillAlt className='icon_dolar'/></span>
+              </div>
+            </div>
+            <div className='product_math'>
+              <div className='product_quantity'>
+                <p>{quantity} buc</p>
+                <div className='btn_container'>
+                  <button onClick={handlePlus}>+</button>
+                  <button onClick={handleMinus}>-</button>
+                </div>
+              </div>
+              <div className='product_total'>
+                <p>Total: {total} RON</p>
+              </div>
+            </div>
+            <div className='product_link'><button onClick={handleButton} className='button_link'>Buy</button></div>
+          </div>
+          
         </div>
     </div>
   )
