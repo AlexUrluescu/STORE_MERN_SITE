@@ -26,7 +26,7 @@ function App() {
           let userData = data.data;
           setUserLogin(userData);
 
-        if(userLogin.email === "admin@gmail.com"){
+        if(userLogin.email === "admin_pantea@gmail.com"){
             window.localStorage.setItem("isAdmin", true);
         }
           

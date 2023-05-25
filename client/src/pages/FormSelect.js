@@ -54,8 +54,15 @@ const FormSelect = ({setUserLogin}) => {
       }
 
       const handleButton = () => {
-        alert(`You bought ${quantity} ${product.product_name} at ${total} $ `);
-        navigate("/store")
+
+        if(quantity === 0){
+          alert("Nu ai adaugat nicio bucata")
+        }
+        else{
+          alert(`You bought ${quantity} ${product.product_name} at ${total} $ `);
+          navigate("/store")
+        }
+
       }
 
   return (

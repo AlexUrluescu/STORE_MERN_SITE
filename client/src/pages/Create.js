@@ -95,7 +95,7 @@ const Create = ({userLogin, setUserLogin}) => {
                 <div className="cont_all">
                 <div className="create_box">
                     <div>
-                        <h2>Create a post</h2>
+                        <h2>Add a product</h2>
                     </div>
                     <div className="create_form">
                         <form className="form_cont" onSubmit={handleSubmit}>
