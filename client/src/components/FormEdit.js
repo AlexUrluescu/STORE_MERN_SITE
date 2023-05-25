@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { FaMoneyBillAlt } from "react-icons/fa";
+
 
 
 const FormEdit = ({title, description, price, id}) => {
@@ -25,15 +27,25 @@ const FormEdit = ({title, description, price, id}) => {
   }
 
   return (
-    <div className='formEdit'>
-        <div className='form_title'>{title}</div>
-        <div className='form_content'>{description}</div>
-        <div className='form_content'>{price}</div>
-        <div className="btn_cont">
+
+
+        <div className='form2'>
+          <div className='product_title'>{title}</div>
+          <div className='form_all_content'>
+            <div className='form_content'>{description}</div>
+            <div className='form_price'>
+              <p>{price} </p>
+              <span><FaMoneyBillAlt className='icon_dolar'/></span>
+            </div>
+            
+          </div>
+          <div className='product_link'>
             <button className='btn_delete' onClick ={handleDelete}>Delete</button>
-            <Link className='button_link' to={`/myproducts/${id}`}>Edit</Link>
+            <Link className='button_link_edit' to={`/myproducts/${id}`}>Edit</Link>
+            {/* <Link className='btn_store_view' to={`/store/${link}`}>View</Link> */}
+          </div>
         </div>
-    </div>
+
   )
 }
 

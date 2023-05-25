@@ -42,7 +42,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: 20px; */
+    background-color: rgb(246, 246, 246);
+    padding: 20px;
 }
 
 .form_cont input{
@@ -54,6 +55,7 @@
     padding: 0 10px;
     margin-bottom: 40px;
     margin-top:  5px;
+
 }
 
 

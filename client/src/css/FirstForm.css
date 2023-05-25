@@ -1,6 +1,6 @@
 
 .main{
-    background-color: rgb(246, 246, 246);
+    /* background-color: rgb(246, 246, 246); */
     margin-top: 50px;
 }
 
@@ -12,6 +12,7 @@
 
 .div_form{
     padding: 20px;
+    /* background-color: rgb(246, 246, 246); */
 
     display: flex;
     justify-content: center;

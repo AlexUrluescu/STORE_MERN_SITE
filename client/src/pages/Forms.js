@@ -66,7 +66,7 @@ function Forms({userLogin, setUserLogin}) {
         <div className="container_forms">
                 <div className="div_title"><h2>Store</h2></div>
                 <div className='cont_content'>
-                  {loaderStatus ? <Loader /> : <div className="div_forms">
+                  {loaderStatus ? <div style={{textAlign: "center"}}><Loader /></div> : <div className="div_forms">
                     {products.map((product, index) => (
                         <FormEx key={index} 
                           title = {product.product_name}

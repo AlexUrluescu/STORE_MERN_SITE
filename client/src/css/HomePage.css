@@ -157,6 +157,19 @@
     cursor: pointer;
 }
 
+
+.button_link_edit{
+    border: none;
+    background-color: #0747a1;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 7px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .footer{
     background-color: black;
     color: white;
