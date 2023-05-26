@@ -56,7 +56,7 @@ const HomePage = ({userLogin , setUserLogin}) => {
             {/* // eslint-disable-next-line */}
             <div className="container_home">
                 <div className="container_welcome">
-                    <h1>StoreWeb</h1>
+                    <h1 className="title_page">StoreWeb</h1>
                 {/* // eslint-disable-next-line */}
                     {userLogin.length !== 0 ? <h1 className="welcome_h">Bine ai venit, <b className="welcome_b">{userLogin.first_name} {userLogin.last_name}</b></h1>:<h1> </h1>}
                     {userLogin.length !== 0 ? <h3> </h3>: <div>Login now and enjoy</div>}
@@ -70,7 +70,7 @@ const HomePage = ({userLogin , setUserLogin}) => {
             </div>
             
             <footer className="footer">
-                <span>Created by Madalina</span>
+                <span>Created by Madalina Pantea</span>
             </footer>
         </div> 
     )

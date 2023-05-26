@@ -92,8 +92,8 @@ const Create = ({userLogin, setUserLogin}) => {
         <div>
             <NavBar setUserLogin={setUserLogin}/>
             <div className="create_container1">
-                <div className="cont_all">
-                <div className="create_box">
+                <div>
+                <div>
                     <div>
                         <h2>Add a product</h2>
                     </div>
@@ -109,8 +109,8 @@ const Create = ({userLogin, setUserLogin}) => {
                 </div>
                 </div>
             </div>
-            <footer>
-                <span>Created by Madalina</span>
+            <footer className="footer">
+                <span>Created by Madalina Pantea</span>
             </footer>
             
         </div>

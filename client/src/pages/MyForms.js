@@ -20,7 +20,7 @@ const MyForms = ({userLogin, setUserLogin}) => {
         const res = await fetch("http://localhost:5000/posts");
         const data = await res.json();
 
-        console.log(data);
+        // console.log(data);
         setProducts(data)
         setLoaderStatus(false);
         
@@ -70,8 +70,8 @@ const MyForms = ({userLogin, setUserLogin}) => {
                 id = {product._id}/>
             ))}
         </div>
-        <footer>
-            <span>Created by Madalina</span>
+        <footer className='footer'>
+            <span>Created by Madalina Pantea</span>
         </footer>
     </div>
    

@@ -87,8 +87,8 @@ const EditForm = ({setUserLogin}) => {
                 </form>
             </div>
 
-            <footer>
-                <span>Created by Madalina</span>
+            <footer className="footer">
+                <span>Created by Madalina Pantea</span>
             </footer>
         </div>
     )

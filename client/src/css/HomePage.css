@@ -7,6 +7,10 @@
     
 }
 
+.title_page{
+    font-size: 60px;
+}
+
 .container_welcome{
     /* background-color: antiquewhite; */
     width: 50%;
@@ -171,7 +175,7 @@
 }
 
 .footer{
-    background-color: black;
+    background-color: #5d93b1;
     color: white;
     text-align: center;
     padding: 10px;

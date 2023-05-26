@@ -23,7 +23,7 @@ function Forms({userLogin, setUserLogin}) {
         const res = await fetch("http://localhost:5000/posts");
         const data = await res.json();
 
-        console.log(data);
+        // console.log(data);
         setProducts(data)
         setLoaderStatus(false);
         
@@ -63,7 +63,7 @@ function Forms({userLogin, setUserLogin}) {
   return (
     <div>
         <NavBar setUserLogin={setUserLogin}/>
-        <div className="container_forms">
+        <div className='store_products'>
                 <div className="div_title"><h2>Store</h2></div>
                 <div className='cont_content'>
                   {loaderStatus ? <div style={{textAlign: "center"}}><Loader /></div> : <div className="div_forms">
@@ -79,8 +79,8 @@ function Forms({userLogin, setUserLogin}) {
                 </div>
         </div>
 
-        <footer>
-                <span>Created by Madalina</span>
+        <footer className='footer'>
+                <span>Created by Madalina Pantea</span>
         </footer>
     </div>
   )

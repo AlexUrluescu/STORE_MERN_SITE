@@ -66,7 +66,7 @@ const Login = ({setUserLogin}) => {
             <div className="container-fr">
                 <div className="login_container">
                     <div className="form_text">
-                        <h1><b>Welcome in WebSchool</b></h1>
+                        <h1><b>Welcome in StoreWeb</b></h1>
                         <h3>Login with your email and password</h3>
                     </div>
                     <form onSubmit={handleSubmit} className="login_form">
