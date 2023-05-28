@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import NavBar from "../components/NavBar";
 import "../css/Login.css";
+import { url } from "../static/url_server";
 
 const initialUser = {
     email: "",
@@ -29,7 +30,7 @@ const Login = ({setUserLogin}) => {
 
         console.log(user);
 
-        const res = await fetch("http://localhost:5000/login", {
+        const res = await fetch(`${url}/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

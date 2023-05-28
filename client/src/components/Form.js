@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import { url } from "../static/url_server";
+
 const user = {
     first_name: '',
     last_name: '',
@@ -20,7 +22,7 @@ const Form = () => {
         e.preventDefault();
 
         try {
-            const res = await fetch("http://localhost:5000/register", {
+            const res = await fetch(`${url}/register`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

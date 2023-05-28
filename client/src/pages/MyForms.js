@@ -7,6 +7,8 @@ import FormEdit from '../components/FormEdit';
 import {useState, useEffect} from "react"
 import "../css/FormsEdit.css"
 
+import { url } from '../static/url_server';
+
 const MyForms = ({userLogin, setUserLogin}) => {
 
     const [ products, setProducts ] = useState([]);
@@ -17,7 +19,7 @@ const MyForms = ({userLogin, setUserLogin}) => {
 
       try {
         setLoaderStatus(true);
-        const res = await fetch("http://localhost:5000/posts");
+        const res = await fetch(`${url}/posts`);
         const data = await res.json();
 
         // console.log(data);
@@ -32,7 +34,7 @@ const MyForms = ({userLogin, setUserLogin}) => {
 
     const sendData = async () => {
       try {
-          const res = await fetch("http://localhost:5000/userData", {
+          const res = await fetch(`${url}/userData`, {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json'
@@ -71,7 +73,7 @@ const MyForms = ({userLogin, setUserLogin}) => {
                 id = {product._id}/>
             ))}
         </div>}
-        
+
         <footer className='footer'>
             <span>Created by Madalina Pantea</span>
         </footer>

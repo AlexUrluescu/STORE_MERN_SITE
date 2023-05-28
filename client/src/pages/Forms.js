@@ -8,6 +8,7 @@ import FormEx from '../components/FormEx'
 import { useState, useEffect } from 'react';
 
 import Loader from '../components/Loader';
+import { url } from '../static/url_server';
 
 
 function Forms({userLogin, setUserLogin}) {
@@ -20,7 +21,7 @@ function Forms({userLogin, setUserLogin}) {
 
       try {
         setLoaderStatus(true);
-        const res = await fetch("http://localhost:5000/posts");
+        const res = await fetch(`${url}/posts`);
         const data = await res.json();
 
         // console.log(data);
@@ -35,7 +36,7 @@ function Forms({userLogin, setUserLogin}) {
 
     const sendData = async () => {
       try {
-          const res = await fetch("http://localhost:5000/userData", {
+          const res = await fetch(`${url}/userData`, {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json'

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaMoneyBillAlt } from "react-icons/fa";
-
+import { url } from "../static/url_server";
 
 
 const FormEdit = ({title, description, price, id}) => {
@@ -9,7 +9,7 @@ const FormEdit = ({title, description, price, id}) => {
     // console.log("delete");
     try {
 
-      const data = await fetch(`http://localhost:5000/posts/${id}`, {
+      const data = await fetch(`${url}/posts/${id}`, {
           method:'DELETE'
       })
 

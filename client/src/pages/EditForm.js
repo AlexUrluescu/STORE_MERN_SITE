@@ -7,6 +7,8 @@ import {useState, useEffect } from "react"
 import { useParams } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
 
+import { url } from "../static/url_server";
+
 const initialDataForm = {
   product_name: "",
   details: "",
@@ -22,7 +24,7 @@ const EditForm = ({setUserLogin}) => {
 
     useEffect(() => {
       const fetchForm = async () => {
-        const res = await fetch(`http://localhost:5000/posts/${id}`);
+        const res = await fetch(`${url}/posts/${id}`);
         const data = await res.json();
 
         console.log(data);
@@ -41,7 +43,7 @@ const EditForm = ({setUserLogin}) => {
         const details = postEdit.details;
         const price = postEdit.price;
 
-        const data = await fetch(`http://localhost:5000/posts/${id}`, {
+        const data = await fetch(`${url}/posts/${id}`, {
             method:'PUT',
             headers: {
                 'Content-Type': 'application/json'

@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 
 import "../css/Create.css";
 
+import { url } from "../static/url_server";
+
 const initialForm = {
   product_name: '',
   details: '',
@@ -22,7 +24,7 @@ const Create = ({userLogin, setUserLogin}) => {
         
         const sendData = async () => {
             try {
-                const res = await fetch("http://localhost:5000/userData", {
+                const res = await fetch(`${url}/userData`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -65,7 +67,7 @@ const Create = ({userLogin, setUserLogin}) => {
 
         console.log(post);
 
-        const res = await fetch("http://localhost:5000/posts", {
+        const res = await fetch(`${url}/posts`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

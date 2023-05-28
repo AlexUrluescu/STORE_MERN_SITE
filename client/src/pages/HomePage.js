@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import myImage from "../static/planeta.png"
 import "../css/HomePage.css";
 // import FormEx from "../components/FormEx";
-
+import { url } from "../static/url_server";
 
 const HomePage = ({userLogin , setUserLogin}) => {
 
@@ -18,7 +18,7 @@ const HomePage = ({userLogin , setUserLogin}) => {
         const sendData = async () => {
                 try {
 
-                    const res = await fetch("http://localhost:5000/userData", {
+                    const res = await fetch(`${url}/userData`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'

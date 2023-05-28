@@ -8,7 +8,7 @@ import { FaMoneyBillAlt } from "react-icons/fa";
 import "../css/ProductSelect.css";
 
 import NavBar from '../components/NavBar';
-
+import { url } from '../static/url_server';
 
 
 const FormSelect = ({setUserLogin}) => {
@@ -25,7 +25,7 @@ const FormSelect = ({setUserLogin}) => {
 
     useEffect(() => {
         const fetchForm = async () => {
-            const res = await fetch(`http://localhost:5000/posts/${id}`);
+            const res = await fetch(`${url}/posts/${id}`);
             const data = await res.json();
 
             console.log(data);
