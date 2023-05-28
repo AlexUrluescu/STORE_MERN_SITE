@@ -6,7 +6,7 @@ import NavBar from "../components/NavBar";
 // import UserContext from "../context/UserContext";
 import { Link } from "react-router-dom";
 
-import myImage from "../static/poza11.png"
+import myImage from "../static/planeta.png"
 import "../css/HomePage.css";
 // import FormEx from "../components/FormEx";
 

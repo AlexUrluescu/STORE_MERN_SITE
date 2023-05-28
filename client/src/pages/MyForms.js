@@ -61,7 +61,8 @@ const MyForms = ({userLogin, setUserLogin}) => {
         <div className="create_container1">
             <h2>Admin Store</h2>
         </div>
-        <div className='cont_formsEdit'>
+
+        {loaderStatus ? <div style={{textAlign: "center"}}><Loader /></div> : <div className='myproducts_container'>
             {products.map((product, index) => (
                 <FormEdit key={index} 
                 title = {product.product_name}
@@ -69,7 +70,8 @@ const MyForms = ({userLogin, setUserLogin}) => {
                 price = {product.price}
                 id = {product._id}/>
             ))}
-        </div>
+        </div>}
+        
         <footer className='footer'>
             <span>Created by Madalina Pantea</span>
         </footer>

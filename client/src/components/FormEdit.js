@@ -29,7 +29,7 @@ const FormEdit = ({title, description, price, id}) => {
   return (
 
 
-        <div className='form2'>
+        <div className="myproduct">
           <div className='product_title'>{title}</div>
           <div className='form_all_content'>
             <div className='form_content'>{description}</div>
