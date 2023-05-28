@@ -78,7 +78,7 @@ const EditForm = ({setUserLogin}) => {
             <div className="main">
                 <h2 style={{textAlign: "center", fontSize:"40px"}}>Edit form</h2>
             </div>
-            <div>
+            <div className="all_form_cont">
               <form className="form_cont" onSubmit={handleSubmit}>
                             <input onChange={handleChange} value={postEdit.product_name} type="text" placeholder="Product name" name="product_name" />
                             <input onChange={handleChange} value={postEdit.details} type="text" placeholder="Details" name="details" />

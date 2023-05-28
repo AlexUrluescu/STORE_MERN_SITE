@@ -52,8 +52,18 @@
     margin-top: 40px;
 }
 
+.all_form_cont{
+    /* background-color: green; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .form_cont{
     margin-top: 50px;
+    /* background-color: red; */
+    border: none;
 }
 
 #btn_form{
