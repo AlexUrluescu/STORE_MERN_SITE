@@ -62,7 +62,7 @@ const Form = () => {
                 <input onChange={handleChange} value={formData.email} type="email" name="email" placeholder="Email"/>
                 <input onChange={handleChange} value={formData.password} type="password" name="password" placeholder="Password" />
 
-                <button className="btn_register" type="submit">Register</button>
+                <button className="btn_create" style={{marginTop: "20px"}} type="submit">Register</button>
             </form>
         </div>
     )

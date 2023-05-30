@@ -78,11 +78,17 @@
 .btn_create{
     width: 100px;
     height: 40px;
-    background-color: #d4155e;
+    background-color: #ff2a5f;
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+
+    transition: all .4s;
+}
+
+.btn_create:hover{
+    background-color: #d4155e;
 }
 
 footer{

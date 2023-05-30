@@ -164,7 +164,7 @@
 
 .button_link_edit{
     border: none;
-    background-color: #0747a1;
+    background-color: #f8436e;
     color: white;
     font-weight: 500;
     border-radius: 10px;
@@ -172,6 +172,12 @@
     font-size: 15px;
     text-decoration: none;
     cursor: pointer;
+
+    transition: all .4s;
+}
+
+.button_link_edit:hover{
+    background-color: #d4155e;
 }
 
 .container_iconArrow{

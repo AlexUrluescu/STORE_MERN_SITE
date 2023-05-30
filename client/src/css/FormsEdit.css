@@ -28,7 +28,7 @@
 }
 
 .btn_delete{
-    background-color: rgb(179, 7, 7);
+    background-color: rgb(173, 0, 0);
     border: none;
     width: 100px;
     height: 36px;
@@ -37,6 +37,12 @@
     margin-right: 10px;
     cursor: pointer;
     color: white;
+
+    transition: all .4s;
+}
+
+.btn_delete:hover{
+    background-color: rgb(216, 0, 0);
 }
 
 footer{
@@ -56,5 +62,6 @@ footer{
 .myproduct{
     background-color: #fce4ea;
     width: 350px;
-    padding: 15px
+    padding: 20px;
+    border-radius: 10px;
 }

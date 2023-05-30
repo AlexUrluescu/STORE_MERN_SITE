@@ -86,7 +86,7 @@ const Login = ({setUserLogin}) => {
                             placeholder="Password"
                             name="password" />
 
-                        <input className="login_button" type="submit" value="Login"/>
+                        <input className="btn_create" style={{marginTop: "20px"}} type="submit" value="Login"/>
                     </form>
                     <div className="register_cont">
                         <h2>Don't have an account?<Link className="link_register" to="/register"> Register </Link></h2>

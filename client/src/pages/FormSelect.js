@@ -99,7 +99,7 @@ const FormSelect = ({setUserLogin}) => {
                 <p>Total: {total} RON</p>
               </div>
             </div>
-            <div className='product_link'><button onClick={handleButton} className='button_link'>Buy</button></div>
+            <div className='product_link'><button onClick={handleButton} className="btn_create" style={{marginTop: "20px"}}>Buy</button></div>
           </div>
           
         </div>

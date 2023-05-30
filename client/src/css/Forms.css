@@ -49,13 +49,21 @@
     /* margin-top: px; */
 }
 .btn_store_view{
-    background-color: #d4155e;
+    background-color: #ff2a5f;
+
     color: white;
     padding: 10px 20px;
     height: 30px;
     border: none;
     border-radius: 10px;
     text-decoration: none;
+
+    transition: all .4s;
+}
+
+.btn_store_view:hover{
+    background-color: #d4155e;
+
 }
 
 .div_forms{
