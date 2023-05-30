@@ -8,6 +8,7 @@ import {useState, useEffect} from "react"
 import "../css/FormsEdit.css"
 
 import { url } from '../static/url_server';
+import Footer from '../components/Footer';
 
 const MyForms = ({userLogin, setUserLogin}) => {
 
@@ -70,13 +71,12 @@ const MyForms = ({userLogin, setUserLogin}) => {
                 title = {product.product_name}
                 description = {product.details}
                 price = {product.price}
+                buc = {product.quantity}
                 id = {product._id}/>
             ))}
         </div>}
 
-        <footer className='footer'>
-            <span>Created by Madalina Pantea</span>
-        </footer>
+        <Footer />
     </div>
    
   )

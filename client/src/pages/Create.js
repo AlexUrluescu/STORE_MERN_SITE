@@ -1,5 +1,6 @@
 
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -11,7 +12,8 @@ import { url } from "../static/url_server";
 const initialForm = {
   product_name: '',
   details: '',
-  price: ''
+  price: '',
+  quantity: ''
 }
 
 const Create = ({userLogin, setUserLogin}) => {
@@ -104,6 +106,7 @@ const Create = ({userLogin, setUserLogin}) => {
                             <input onChange={handleChange} value={post.product_name} type="text" placeholder="Product name" name="product_name" />
                             <input onChange={handleChange} value={post.details} type="text" placeholder="Details" name="details" />
                             <input onChange={handleChange} value={post.price} type="text" placeholder="Price" name="price" />
+                            <input onChange={handleChange} value={post.quantity} type="text" placeholder="Quantity" name="quantity" />
 
                             <button className="btn_create" type="submit"><b>Create</b></button>
                         </form>
@@ -111,9 +114,7 @@ const Create = ({userLogin, setUserLogin}) => {
                 </div>
                 </div>
             </div>
-            <footer className="footer">
-                <span>Created by Madalina Pantea</span>
-            </footer>
+            <Footer />
             
         </div>
     )

@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import "../css/NavBar.css"
+import myImage from "../static/logo.png";
 
 
 const NavBar = ({setUserLogin}) => {
@@ -18,7 +19,8 @@ const NavBar = ({setUserLogin}) => {
     return(
         <div className="navbar">
             <div className="title">
-                <h2>StoreWeb</h2>
+                <div className="title_logo"><img src={myImage} alt="logo"></img></div> 
+                <h2>Babii Nails</h2>
             </div>
             <div className="links">
                 <Link className="link" to="/"> Home </Link>

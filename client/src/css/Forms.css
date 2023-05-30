@@ -1,6 +1,6 @@
 
 .form2{
-    background-color: rgb(221, 236, 249);
+    background: #fce4ea;
     width: 300px;
     /* height: 100px; */
     padding: 15px;
@@ -44,12 +44,12 @@
 }
 
 .icon_dolar{
-    color: rgb(9, 174, 9);
+    color: #d4155e;
     font-size: 25px;
     /* margin-top: px; */
 }
 .btn_store_view{
-    background-color: #0747a1;
+    background-color: #d4155e;
     color: white;
     padding: 10px 20px;
     height: 30px;

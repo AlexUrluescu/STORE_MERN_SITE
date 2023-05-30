@@ -4,6 +4,7 @@ import "../css/Forms.css";
 
 import NavBar from '../components/NavBar'
 import FormEx from '../components/FormEx'
+import Footer from '../components/Footer';
 
 import { useState, useEffect } from 'react';
 
@@ -80,9 +81,7 @@ function Forms({userLogin, setUserLogin}) {
                 </div>
         </div>
 
-        <footer className='footer'>
-                <span>Created by Madalina Pantea</span>
-        </footer>
+        <Footer />
     </div>
   )
 }

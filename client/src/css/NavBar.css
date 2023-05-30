@@ -1,6 +1,6 @@
 
 .navbar{
-    background-color: #5d93b1;
+    background-color: #d4155e;
     color: white;
     border-bottom: 1px solid white;
 
@@ -12,8 +12,21 @@
     /* background-color: red; */
     width: 30%;
     padding: 15px 10px;
-
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* .title_logo{
+    background-color: green;
+} */
+
+.title_logo img{
+    width: 60px;
+    height: 50px;
 }
 
 .links{

@@ -3,7 +3,7 @@ import { FaMoneyBillAlt } from "react-icons/fa";
 import { url } from "../static/url_server";
 
 
-const FormEdit = ({title, description, price, id}) => {
+const FormEdit = ({title, description, price, buc, id}) => {
 
   const handleDelete = async () => {
     // console.log("delete");
@@ -37,7 +37,9 @@ const FormEdit = ({title, description, price, id}) => {
               <p>{price} </p>
               <span><FaMoneyBillAlt className='icon_dolar'/></span>
             </div>
-            
+          </div>
+          <div>
+              <p>Buc: {buc}</p>
           </div>
           <div className='product_link'>
             <button className='btn_delete' onClick ={handleDelete}>Delete</button>

@@ -5,8 +5,10 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 // import UserContext from "../context/UserContext";
 import { Link } from "react-router-dom";
 
-import myImage from "../static/planeta.png";
+import myImage from "../static/unghii2.jpg";
 import "../css/HomePage.css";
+
+import Footer from "../components/Footer";
 // import FormEx from "../components/FormEx";
 import { url } from "../static/url_server";
 
@@ -47,7 +49,7 @@ const HomePage = ({ userLogin, setUserLogin }) => {
       {/* // eslint-disable-next-line */}
       <div className="container_home">
         <div className="container_welcome">
-          <h1 className="title_page">StoreWeb</h1>
+          <h1 className="title_page">Babii Nails</h1>
           {/* // eslint-disable-next-line */}
           {userLogin.length !== 0 ? (
             <h1 className="welcome_h">
@@ -86,9 +88,7 @@ const HomePage = ({ userLogin, setUserLogin }) => {
         </div>
       </Link>
 
-      <footer className="footer">
-        <span>Created by Madalina Pantea</span>
-      </footer>
+       <Footer />     
     </div>
   );
 };

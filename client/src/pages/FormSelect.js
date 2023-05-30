@@ -40,7 +40,13 @@ const FormSelect = ({setUserLogin}) => {
 
 
     const handlePlus = () => {
-        setQuantity(quantity + 1)
+        const bucProduct = parseInt(product.quantity);
+        if(quantity < bucProduct) setQuantity(quantity + 1)
+
+        else{
+          setQuantity(bucProduct)
+        }
+        
       }
     
       const handleMinus = () => {
@@ -76,6 +82,9 @@ const FormSelect = ({setUserLogin}) => {
               <div className='container_price'>
                 <p className='product_class'>{product.price}</p>
                 <span><FaMoneyBillAlt className='icon_dolar'/></span>
+              </div>
+              <div>
+                <p>Buc: {product.quantity}</p>
               </div>
             </div>
             <div className='product_math'>

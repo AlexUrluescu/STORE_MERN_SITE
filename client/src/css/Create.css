@@ -78,7 +78,8 @@
 .btn_create{
     width: 100px;
     height: 40px;
-    background-color: gold;
+    background-color: #d4155e;
+    color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
