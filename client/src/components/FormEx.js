@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { FaMoneyBillAlt } from "react-icons/fa";
 
-const FormEx = ({title, description, price, link}) => {
+const FormEx = ({title, description, price, buc, link}) => {
 
   return (
     <div className='form2'>
@@ -15,6 +15,9 @@ const FormEx = ({title, description, price, link}) => {
           </div>
           
         </div>
+        <div>
+            <p>Buc: {buc}</p>
+          </div>
         <div className='product_link'><Link className='btn_store_view' to={`/store/${link}`}>View</Link></div>
     </div>
   )

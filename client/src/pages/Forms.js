@@ -74,6 +74,7 @@ function Forms({userLogin, setUserLogin}) {
                           title = {product.product_name}
                           description = {product.details}
                           price = {product.price}
+                          buc = {product.quantity}
                           link= {product._id}/>
                       ))}  
                   </div>}
