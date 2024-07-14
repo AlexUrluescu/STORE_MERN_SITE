@@ -1,75 +1,73 @@
+.navbar {
+  background-color: #2f93c1;
+  color: white;
+  border-bottom: 1px solid white;
 
-.navbar{
-    background-color: #d4155e;
-    color: white;
-    border-bottom: 1px solid white;
-
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.title{
-    /* background-color: red; */
-    width: 30%;
-    padding: 15px 10px;
-    text-align: center;
+.title {
+  /* background-color: red; */
+  width: 30%;
+  padding: 15px 10px;
+  text-align: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 /* .title_logo{
     background-color: green;
 } */
 
-.title_logo img{
-    width: 60px;
-    height: 50px;
+.title_logo img {
+  width: 60px;
+  height: 50px;
 }
 
-.links{
-    /* background-color: red; */
-    width: 70%;
-    padding: 15px 30px;
+.links {
+  /* background-color: red; */
+  width: 70%;
+  padding: 15px 30px;
 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;
-
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
 }
 
-.status_user{
-    width: 20%;
-    padding: 10px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.status_user {
+  width: 20%;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.link{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
 
-.logout{
-    background-color: white;
-    color: black;
-    padding: 3px 10px;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
+.logout {
+  background-color: white;
+  color: black;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
-.login{
-    background-color: white;
-    color: black;
-    padding: 3px 10px;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
+.login {
+  background-color: white;
+  color: black;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
 }

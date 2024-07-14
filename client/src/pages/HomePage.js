@@ -5,7 +5,7 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 // import UserContext from "../context/UserContext";
 import { Link } from "react-router-dom";
 
-import myImage from "../static/unghii2.jpg";
+import myImage from "../static/poza.png";
 import "../css/HomePage.css";
 
 import Footer from "../components/Footer";
@@ -49,7 +49,7 @@ const HomePage = ({ userLogin, setUserLogin }) => {
       {/* // eslint-disable-next-line */}
       <div className="container_home">
         <div className="container_welcome">
-          <h1 className="title_page">Babii Nails</h1>
+          <h1 className="title_page">Shopify marker</h1>
           {/* // eslint-disable-next-line */}
           {userLogin.length !== 0 ? (
             <h1 className="welcome_h">
@@ -79,7 +79,9 @@ const HomePage = ({ userLogin, setUserLogin }) => {
       </div>
 
       <div className="container_iconArrow">
-        <span><AiOutlineArrowDown className="icon_arrow"/></span>
+        <span>
+          <AiOutlineArrowDown className="icon_arrow" />
+        </span>
       </div>
 
       <Link className="link_store" to="/store">
@@ -88,7 +90,7 @@ const HomePage = ({ userLogin, setUserLogin }) => {
         </div>
       </Link>
 
-       <Footer />     
+      <Footer />
     </div>
   );
 };

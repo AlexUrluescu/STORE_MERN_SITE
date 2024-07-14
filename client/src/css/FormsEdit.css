@@ -1,67 +1,66 @@
-
-.cont_formsEdit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+.cont_formsEdit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-.create_container1{
-    text-align: center;
-    font-size: 32px;
-    margin: 50px 0;
+.create_container1 {
+  text-align: center;
+  font-size: 32px;
+  margin: 50px 0;
 }
 
-.formEdit{
-    padding: 15px;
-    width: 300px;
+.formEdit {
+  padding: 15px;
+  width: 300px;
 }
 
-.btn_cont{
-    /* background-color: blue; */
+.btn_cont {
+  /* background-color: blue; */
 
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
 }
 
-.btn_delete{
-    background-color: rgb(173, 0, 0);
-    border: none;
-    width: 100px;
-    height: 36px;
-    border-radius: 10px;
-    font-weight: 500;
-    margin-right: 10px;
-    cursor: pointer;
-    color: white;
+.btn_delete {
+  background-color: rgb(173, 0, 0);
+  border: none;
+  width: 100px;
+  height: 36px;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
 
-    transition: all .4s;
+  transition: all 0.4s;
 }
 
-.btn_delete:hover{
-    background-color: rgb(216, 0, 0);
+.btn_delete:hover {
+  background-color: rgb(216, 0, 0);
 }
 
-footer{
-    margin-top: 250px;
+footer {
+  margin-top: 250px;
 }
 
-.myproducts_container{
-    /* background-color: red; */
+.myproducts_container {
+  /* background-color: red; */
 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.myproduct{
-    background-color: #fce4ea;
-    width: 350px;
-    padding: 20px;
-    border-radius: 10px;
+.myproduct {
+  background: #48b0d6;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
 }
