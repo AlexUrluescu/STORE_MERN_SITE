@@ -5,14 +5,20 @@ import cors from "cors";
 
 const app = express();
 
-app.use(cors())
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 // middlewares
 app.use(express.json());
-app.use(fileUpload({
+app.use(
+  fileUpload({
     useTempFiles: true,
-    tempFileDir: './upload'
-}))
+    tempFileDir: "./upload",
+  })
+);
 
 // routes
 app.use(post_routes);
