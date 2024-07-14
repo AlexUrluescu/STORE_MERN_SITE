@@ -11,7 +11,7 @@ app.use(
   })
 );
 
-// middlewares
+// middlewaress
 app.use(express.json());
 app.use(
   fileUpload({
